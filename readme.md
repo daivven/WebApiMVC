@@ -4,7 +4,7 @@
 以下是详细的步骤。
 
 ## 第一步 ##
-在数据库中创建一张数据表Customer，见下图：
+在数据库中创建一张数据表，表名为Customer，见下图：
 ![](https://i.imgur.com/w3HHT77.jpg)
 ## 第二步 ##
 
@@ -40,7 +40,7 @@
 
 - 点击'完成'。
 ## 第四步 ##
-现在我们要添加Wep Api控制器了。
+现在的工作就是要为Wep Api添加控制器了。
 
 
 - 右键选择'controllers'文件夹。
@@ -53,13 +53,9 @@
 
 - 点击'添加'。
 
-
-
 - 选择数据模型类Customer，选择Data context类文件，本例中为SystemTestEntity。
 
-
-
-- 设置控制器名称为CustomersController，点击添加。
+- 设置控制器名称为CustomersController，点击'添加'。
 ![](https://i.imgur.com/0X6L1DJ.gif)
 上述操作完成后，CustomerController.cs会自动生成。
 
@@ -406,7 +402,6 @@ namespace MVCPersatantion.Controllers
 
 <h2>Index</h2>
 
-
 <div align="center">
     @Html.ActionLink("Create", "Create", "Customer", new { area = "" }, null)
     <br /><br />
@@ -623,7 +618,8 @@ namespace MVCPersatantion.Controllers
 
 
 
-- 右键解决方案，选择属性。
+- 右键解决方案，选择属性(Properties)。
+
 ![](https://i.imgur.com/HVlREAj.jpg)
 
 
@@ -632,7 +628,7 @@ namespace MVCPersatantion.Controllers
 
 
 
-- 最后运行项目，看看CRUD操作的执行结果。
+- 运行项目，看看CRUD操作的执行结果。
 
 Select
 ![](https://i.imgur.com/GkKF4HQ.jpg)
@@ -656,12 +652,13 @@ Delete
 <br>
 &nbsp;博客地址：<a href="http://www.cnblogs.com/yayazi/">http://www.cnblogs.com/yayazi/</a>
 <br>
-&nbsp;本文地址：<a href="http://www.cnblogs.com/yayazi/p/8383485.html">http://www.cnblogs.com/yayazi/p/8383485.html</a>
+&nbsp;本文地址：<a href="http://www.cnblogs.com/yayazi/p/8444054.html">http://www.cnblogs.com/yayazi/p/8444054.html</a>
 <br>
 &nbsp;声明：本博客原创文字允许转载，转载时必须保留此段声明，且在文章页面明显位置给出原文链接。
-
+<br>
 &nbsp;源码下载：<a href="https://github.com/daivven/WebApiMVC">https://github.com/daivven/WebApiMVC</a>
 
 </div>
+
 
 **PS：本人近期打算换工作，目标地点武汉，目标职位.Net软件工程师，期望月薪资12k以上，春节后可参加面试。有没有园友有合适岗位推荐,求内推哇~**
