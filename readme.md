@@ -5,6 +5,7 @@
 
 ## 第一步 ##
 在数据库中创建一张数据表，表名为Customer，见下图：
+
 ![](https://i.imgur.com/w3HHT77.jpg)
 ## 第二步 ##
 
@@ -44,6 +45,7 @@
 
 
 - 右键选择'controllers'文件夹。
+- 
 ![](https://i.imgur.com/ZznxUmp.jpg)
 
 
