@@ -1,0 +1,67 @@
+﻿@model WebApiMVC.ViewModel.CustomerViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<div align = "center" >
+@using (Html.BeginForm("create", "Customer", FormMethod.Post))
+{
+    <table class="table">
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.customer.Name)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.customer.Name)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.customer.Address)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.customer.Address)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.customer.MobileNo)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.customer.MobileNo)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.customer.Birthdate)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.customer.Birthdate)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.customer.EmailId)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.customer.EmailId)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+
+            <td>
+                <input type="submit"  value="保存" />
+            </td>
+        </tr>
+    </table>
+}
+    </div>

@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+<div align="center">
+    @Html.ActionLink("Create", "Create", "Customer", new { area = "" }, null)
+    <br /><br />
+    <table cellpadding="2"
+           class="table"
+           cellspacing="2"
+           border="1">
+        <tr class="btn-primary">
+
+            <th>
+                CustomerId
+            </th>
+            <th> Name</th>
+            <th> Address</th>
+            <th> MobileNo</th>
+            <th> Birthdate</th>
+            <th> EmailId</th>
+            <th> Action</th>
+        </tr>
+        @foreach (var Cust in ViewBag.listCustomers)
+        {
+            <tr class="btn-success">
+                <td>
+                    @Cust.CustomerId
+                </td>
+                <td>
+                    @Cust.Name
+                </td>
+                <td>
+                    @Cust.Address
+                </td>
+                <td>
+                    @Cust.MobileNo
+                </td>
+                <td>
+                    @Cust.Birthdate.ToString("dd/MM/yyyy")
+                </td>
+                <td>
+                    @Cust.EmailId
+                </td>
+                <td>
+                    <a onclick="return confirm('确定要删除这条数据?')"
+                       href="@Url.Action("Delete","Customer",new {id= Cust.CustomerId})">Delete</a> ||
+                    <a href="@Url.Action("Edit","Customer",new {id= Cust.CustomerId})">Edit</a>
+                   @*@Html.ActionLink("Edit", "Edit", "Customer", new { id = Cust.CustomerId })*@
+                </td>
+
+            </tr>
+        }
+    </table>
+</div>
